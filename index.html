@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Creative Developer Portfolio</title>
+    <!-- Link to custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Sticky Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Alex.Dev</a>
+            <div class="header-right">
+                <nav id="nav-menu">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">
+                        <!-- Sun Icon (visible in dark mode) -->
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                        </svg>
+                        <!-- Moon Icon (visible in light mode) -->
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" class="hamburger-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Available for Projects</span>
+                <h1>Building Clean, Modern <span>Web Interfaces</span></h1>
+                <p class="hero-desc">
+                    Hi! I'm Alex Carter, an aspiring web developer. I focus on writing clean, semantic HTML5, beautiful CSS3, and creating accessible, responsive websites.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#skills" class="btn btn-secondary">View My Skills</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/profile.png" alt="Alex Carter's professional illustration portrait" class="hero-image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <p>
+                        I am currently taking my first steps in web development. I believe that building great user experiences starts with a solid foundation in core technologies: HTML, CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+                    </p>
+                    <p>
+                        My journey started with a curiosity about how the web works, which quickly turned into a passion for crafting interactive layouts. In my free time, I write clean markup, experiment with new CSS styling techniques, and learn how to build accessible websites for everyone.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">100+</div>
+                        <div class="stat-label">Hours of Coding</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Image Gallery) -->
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-gallery">
+                <div class="gallery-item">
+                    <img src="images/project1.png" alt="Creative Agency Landing Page Mockup">
+                    <div class="gallery-overlay">
+                        <h3>Agency Landing Page</h3>
+                        <p>A modern design featuring custom CSS grids and animations.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="gallery-link">View Code &rarr;</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/project2.png" alt="SaaS Analytics Dashboard Mockup">
+                    <div class="gallery-overlay">
+                        <h3>Analytics Dashboard</h3>
+                        <p>A functional analytics interface with custom glass panels.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="gallery-link">View Code &rarr;</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/project3.png" alt="E-Commerce Mobile Application Mockup">
+                    <div class="gallery-overlay">
+                        <h3>E-Commerce Mobile UI</h3>
+                        <p>A beautiful product interaction card for mobile devices.</p>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="gallery-link">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 (Semantic Markup)</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3 (Grid, Flexbox, Animation)</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Web Design</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skills-category">
+                    <h3>Workflow & Tools</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code Development</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 95%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub Version Control</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span class="skill-name">Command Line Interface (CLI)</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div>
+                        <p class="contact-info-desc">
+                            Have a question or want to work together? Feel free to drop a message in the form, or reach out directly via my email or social links.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">✉</div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>alex.carter@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="contact-form-card">
+                    <form id="contact-form" action="#" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required minlength="2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project..." required minlength="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <span class="footer-logo">Alex.Dev</span>
+            <p>&copy; 2026 Alex Carter. Built with HTML5 & CSS3.</p>
+            <div class="footer-socials">
+                <a href="https://github." target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Submit and Navigation Script -->
+    <script>
+        // Theme Toggling Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+        let currentTheme = 'dark';
+        if (savedTheme) {
+            currentTheme = savedTheme;
+        } else if (systemPrefersLight) {
+            currentTheme = 'light';
+        }
+
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const activeTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = activeTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Mobile Menu Logic
+        const mobileToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                mobileToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Form Handling Logic
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const nameVal = document.getElementById('name').value.trim();
+            const emailVal = document.getElementById('email').value.trim();
+            const msgVal = document.getElementById('message').value.trim();
+            
+            // Validate inputs
+            if (!nameVal || nameVal.length < 2) {
+                showStatus('Please enter a valid name (at least 2 characters).', 'error');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailVal || !emailRegex.test(emailVal)) {
+                showStatus('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            if (!msgVal || msgVal.length < 10) {
+                showStatus('Please enter a longer message (at least 10 characters).', 'error');
+                return;
+            }
+            
+            // Success Simulation
+            showStatus('Sending your message...', 'info');
+            setTimeout(() => {
+                showStatus('Thank you, ' + nameVal + '! Your message was successfully sent.', 'success');
+                form.reset();
+            }, 1000);
+        });
+
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('form-status');
+            statusDiv.className = 'form-status ' + type;
+            statusDiv.textContent = message;
+            
+            if (type === 'info') {
+                statusDiv.style.color = 'var(--text-secondary)';
+                statusDiv.style.display = 'block';
+            } else if (type === 'success') {
+                statusDiv.style.color = '#10b981';
+                statusDiv.style.display = 'block';
+            } else if (type === 'error') {
+                statusDiv.style.color = '#ef4444';
+                statusDiv.style.display = 'block';
+            }
+        }
+
+        // Automated Testing & Screenshot Helper
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else if (urlParams.get('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        if (urlParams.get('menu') === 'open') {
+            navMenu.classList.add('active');
+            mobileToggle.classList.add('active');
+        }
+        if (urlParams.get('form') === 'submitted') {
+            document.getElementById('name').value = 'Jane Doe';
+            document.getElementById('email').value = 'jane@example.com';
+            document.getElementById('message').value = 'This is a test message to verify the form submission styling.';
+            showStatus('Thank you, Jane Doe! Your message was successfully sent.', 'success');
+        }
+    </script>
+
+</body>
+</html>
